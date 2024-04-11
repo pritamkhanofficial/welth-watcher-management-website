@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html class="no-js">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>jQeury.steps Demos</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/bootstrap.css"/>
+    <link rel="stylesheet" href="assets/css/slick.min.css"/>
+    <link rel="stylesheet" href="assets/css/bootstrap-drawer.min.css"/>
+    <link rel="stylesheet" href="assets/icons/style.css"/>
+    <link rel="stylesheet" href="assets/css/style.css"/>
+    <link rel="stylesheet" href="assets/css/animate-4.1.1.min.css"/>
+
+     <script src="assets/js/jquery-3.7.1.min.js"></script>
+    <script src="assets/js/jquery-migrate-3.4.1.js"></script>
+    <script src="assets/js/slick.min.js"></script>
+    <script src="assets/js/waypoints.min.js"></script>
+    <script src="assets/js/countUp.min.js"></script>
+    <script src="assets/js/phosphor-icon.js"></script>
+    <script src="assets/js/scrollreveal-4.0.0.min.js"></script>
+    <script src="assets/js/bootstrap-drawer.min.js"></script>
+    <script src="assets/js/drawer.min.js"></script>
+    <script src="assets/js/main.min.js"></script>
+
+        <link rel="stylesheet" href="assets/css/jquery.steps.css">
+        <!-- <script src="../lib/jquery-1.9.1.min.js"></script> -->
+        <script src="assets/js/jquery.steps.js"></script>
+    </head>
+    <body>
+
+
+        <div class="content">
+            <h1>Basic Demo</h1>
+
+            <script>
+                $(function ()
+                {
+                    var wizard = $("#wizard").steps({
+                        headerTag: "h2",
+                        bodyTag: "section",
+                        transitionEffect: "slideLeft",
+                        
+                        
+                    });
+                    wizard.find('a[href*="#previous"] ').addClass('custom-previous-button-class');
+                });
+            </script>
+
+            <div id="wizard">
+                <h2>First Step</h2>
+                <section>
+                   <div class="heading3 mt-20">The Basics</div>
+          <div class="body3 text-secondary mt-20">Tell us about yourself.</div>
+          <hr>
+      <div class="mb-5 mt-5">
+        <div class="row">
+          <div class="col-md-12 col-lg-6 col-12">
+            <div class="heading7 hover-text-blue mb-3">Budget planning</div>
+            <input class="w-100 bg-surface caption1 pl-16 pr-16 pt-12 pb-12 bora-48" type="text" placeholder="Name"/>
+            <div class="body3 text-secondary mt-2"><i>Select your city or metro area.</i></div>
+
+            <div class="heading7 hover-text-blue mb-3 mt-3">How many people are in your household?</div>
+            <input class="w-100 bg-surface caption1 pl-16 pr-16 pt-12 pb-12 bora-48" type="text" placeholder="Name"/>
+            <div class="body3 text-secondary mt-2"><i>Enter 1 if you live alone; otherwise, include yourself, your partner and any dependents.</i></div>
+
+            <div class="heading7 hover-text-blue mb-3 mt-3">How old are you?</div>
+            <input class="w-100 bg-surface caption1 pl-16 pr-16 pt-12 pb-12 bora-48" type="text" placeholder="Name"/>
+            <div class="body3 text-secondary mt-2"><i>In years</i></div>
+              <div class="form-check mt-5">
+  <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+  <label class="form-check-label" for="flexCheckDefault">
+    Bloomberg may use my information to provide me with advertisements that may be of particular interest to me (note if you do not check this box you will still receive online advertising)
+  </label>
+</div>
+<div class="form-check mt-3">
+  <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+  <label class="form-check-label" for="flexCheckChecked">
+    Bloomberg may send me offers and promotions
+  </label>
+</div>
+
+          </div>
+          <div class="col-md-12 col-lg-6 col-12 p-5">
+            <div class="heading7 hover-text-blue mb-3">Why do I need to share this information?</div>
+            <div class="body3 text-secondary mt-20">Your answers will help us provide the survey, learn more about our audience and prepare analysis for our internal use. We may also use your responses to enhance your experience with this site and improve our services by providing customized content, contextual advertisements and, if you agree, advertisements tailored to your interests. Please see our Privacy Policy for more information.</div>
+          </div>
+        </div>
+      </div>
+                </section>
+
+                <h2>Second Step</h2>
+                <section>
+                    <p>Donec mi sapien, hendrerit nec egestas a, rutrum vitae dolor. Nullam venenatis diam ac ligula elementum pellentesque. 
+                        In lobortis sollicitudin felis non eleifend. Morbi tristique tellus est, sed tempor elit. Morbi varius, nulla quis condimentum 
+                        dictum, nisi elit condimentum magna, nec venenatis urna quam in nisi. Integer hendrerit sapien a diam adipiscing consectetur. 
+                        In euismod augue ullamcorper leo dignissim quis elementum arcu porta. Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                        Vestibulum leo velit, blandit ac tempor nec, ultrices id diam. Donec metus lacus, rhoncus sagittis iaculis nec, malesuada a diam. 
+                        Donec non pulvinar urna. Aliquam id velit lacus.</p>
+                </section>
+
+                <h2>Third Step</h2>
+                <section>
+                    <p>Morbi ornare tellus at elit ultrices id dignissim lorem elementum. Sed eget nisl at justo condimentum dapibus. Fusce eros justo, 
+                        pellentesque non euismod ac, rutrum sed quam. Ut non mi tortor. Vestibulum eleifend varius ullamcorper. Aliquam erat volutpat. 
+                        Donec diam massa, porta vel dictum sit amet, iaculis ac massa. Sed elementum dui commodo lectus sollicitudin in auctor mauris 
+                        venenatis.</p>
+                </section>
+
+                <h2>Forth Step</h2>
+                <section>
+                    <p>Quisque at sem turpis, id sagittis diam. Suspendisse malesuada eros posuere mauris vehicula vulputate. Aliquam sed sem tortor. 
+                        Quisque sed felis ut mauris feugiat iaculis nec ac lectus. Sed consequat vestibulum purus, imperdiet varius est pellentesque vitae. 
+                        Suspendisse consequat cursus eros, vitae tempus enim euismod non. Nullam ut commodo tortor.</p>
+                </section>
+            </div>
+        </div>
+    </body>
+</html>
